@@ -8,6 +8,96 @@
     <title>Healthy Food</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Styles/Style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: block;
+            width: 100%;
+            height: 250px;
+            background: white;
+            overflow-x: scroll;
+            padding: 10px;
+            /* margin: 0 20px; */
+            white-space: nowrap;
+            border-top:   rgba(0, 0, 0, 0.1);
+            border-bottom:   rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            
+        }
+
+        .item {
+            display: inline-block;
+            width: 200px;
+            margin: 0 10px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.05) no-repeat center center;
+            background-size: cover;
+            position: relative;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #dfdfdf;
+            border-radius: 100%;
+        }
+
+        .item div {
+            width: 100%;
+            top: 10%;
+            position: absolute;
+            text-align: center;
+            font-size: 9em;
+            color: white;
+        }
+
+        .item h1 {
+            top: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-size: 4em;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .carousel-control.prev {
+            left: 10px;
+        }
+
+        .carousel-control.next {
+            right: 10px;
+        }
+        #heading-card{
+            text-align: center;
+            font-size: larger;
+            justify-content: center;
+        }
+        #cont-id{
+            font-size: larger;
+            padding-left: 20px;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -36,6 +126,74 @@
         <a href="">About</a>
         <a href="">Blog</a>
     </div>
+    <h1 id="heading-card">What are your favorite cuisines?</h1>
+    <div class="container">
+        <div class="carousel">
+            <div id="card_1" class="item">
+                <div>
+                    <i class="fa fa-glass"></i>
+                </div>
+                
+            </div>
+            <div id="card_2" class="item">
+                <div>
+                    <i class="fa fa-cube"></i>
+                </div>
+                
+            </div>
+            <div id="card_3" class="item">
+                <div>
+                    <i class="fa fa-leaf"></i>
+                </div>
+                
+            </div>
+            <div id="card_4" class="item">
+                <div>
+                    <i class="fa fa-coffee"></i>
+                </div>
+                
+            </div>
+            <div id="card_5" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+            <div id="card_6" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+            <div id="card_7" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+            <div id="card_8" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+            <div id="card_9" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+            <div id="card_10" class="item">
+                <div>
+                    <i class="fa fa-globe"></i>
+                </div>
+                
+            </div>
+        </div>
+        <button class="carousel-control prev">&#10094;</button>
+        <button class="carousel-control next">&#10095;</button>
+    </div>
+    <h1 id="cont-id">Just For You, Select your Dishes and enjoy your Cooking.</h1>
     <!-- cards -->
     <div class="container mt-5">
         <div class="row">
@@ -78,6 +236,222 @@
                     </div>
                 </a>
             </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="./recipePage.html">
+                    <div class="card h-100">
+                        <img src="./Assets/malai-paneer.webp" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">This is a short description of the card.</p>
+                            <p class="card-text"><small class="text-muted">Rating: ★★★★★</small></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -87,6 +461,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="homePage.js"></script>
 </body>
 
 </html>
