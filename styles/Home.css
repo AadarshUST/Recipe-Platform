@@ -1,145 +1,243 @@
+body {
+    font-family: sans-serif;
+}
 
-        body {
-            font-family: sans-serif;
-        }
+h1 {
+    font-weight: 100;
+}
 
-        h1 {
-            font-weight: 100;
-        }
+/* navbar */
+.navbar {
+    background-color: black;
+    color: white;
+}
 
-        .container {
-            width: 100%;
-            display: block;
-            overflow: hidden;
-            position: relative;
-        }
+/* hamburger */
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            
-        }
 
-        .item {
-            flex: 0 0 auto;
-            width: 200px;
-            margin: 0 10px;
-            height: 200px;
-            background: rgba(0, 0, 0, 0.05) no-repeat center center;
-            background-size: cover;
-            border-radius: 20px;
-            box-shadow: 0 0 10px #dfdfdf;
-            scroll-snap-align: center;
-            position: relative;
-        }
+.logo {
+    width: 50px;
+}
 
-        .item div {
-            width: 100%;
-            top: 10%;
-            position: absolute;
-            text-align: center;
-            font-size: 9em;
-            color: white;
-        }
+.navigations-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 37, 37, 0.753);
+    padding: 20px;
+}
 
-        .item h1 {
-            top: 50%;
-            position: absolute;
-            color: white;
-            text-align: center;
-            width: 100%;
-            font-size: 4em;
-        }
+.navigations-links a {
+    padding: 0px 14px;
+    border-right: 2px solid black;
+    color: white;
+    text-decoration: none;
+}
 
-        .carousel-control {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-        }
+.navigations-links a:hover {
+    color: red;
+}
 
-        .carousel-control.prev {
-            left: 10px;
-        }
+.navigations-links a:last-child {
+    border: none;
+}
 
-        .carousel-control.next {
-            right: 10px;
-        }
+/* cards */
+.card {
+    overflow: hidden;
+    color: black;
+    /* border-radius: 15px; */
+}
 
-        #cont-id {
-            font-size: larger;
-            padding-left: 20px;
-        }
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
 
-        #heading-card-carousel {
-            height: 10%;
-        }
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
 
-        @media (max-width: 768px) {
-            .item {
-                width: 150px;
-                height: 150px;
-            }
+.card:hover {
+    color: red;
+}
 
-            #cont-id {
-                font-size: medium;
-                padding-left: 10px;
-            }
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
 
-            #heading-card-carousel h1 {
-                font-size: 1.5em;
-            }
-        }
+.row a:hover {
+    text-decoration: none;
+}
 
-       
-        /* Additional CSS for hover effects */
-        .carousel .item {
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+/* footer */
+.footer {
+    /* position: fixed; */
+    bottom: 0;
+    background-color: rgba(40, 37, 37, 0.753);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
 
-        .carousel .item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navigations-links {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-        .carousel .item div {
-            transition: color 0.3s;
-        }
+    .navigations-links a {
+        padding: 10px 0;
+        border-right: none;
+        border-bottom: 2px solid black;
+        width: 100%;
+        text-align: center;
+    }
 
-        .carousel .item:hover div {
-            color: #ff6f61;
-        }
+    .navigations-links a:last-child {
+        border-bottom: none;
+    }
+}
 
-        .carousel-control {
-            outline: none;
-            border: none;
-            background: none;
-            color: #333;
-            font-size: 2em;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
+/* category */
+.container {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
 
-        .carousel-control:hover {
-            color: #ff6f61;
-        }
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 
-        .carousel-control:focus {
-            outline: none;
-        }
+}
 
-        /* Disable scroll for carousel */
-        .carousel {
-            overflow: hidden;
-        }
-   
+.item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 10px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.05) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #dfdfdf;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.item div {
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    text-align: center;
+    font-size: 9em;
+    color: white;
+}
+
+.item h1 {
+    top: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 4em;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+#cont-id {
+    font-size: larger;
+    padding-left: 20px;
+}
+
+#heading-card-carousel {
+    height: 10%;
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 150px;
+        height: 150px;
+    }
+
+    #cont-id {
+        font-size: medium;
+        padding-left: 10px;
+    }
+
+    #heading-card-carousel h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Additional CSS for hover effects */
+.carousel .item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .item div {
+    transition: color 0.3s;
+}
+
+.carousel .item:hover div {
+    color: #ff6f61;
+}
+
+.carousel-control {
+    outline: none;
+    border: none;
+    background: none;
+    color: #333;
+    font-size: 2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.carousel-control:hover {
+    color: #ff6f61;
+}
+
+.carousel-control:focus {
+    outline: none;
+}
+
+/* Disable scroll for carousel */
+.carousel {
+    overflow: hidden;
+}
