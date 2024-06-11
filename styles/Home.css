@@ -1,0 +1,145 @@
+
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .container {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            
+        }
+
+        .item {
+            flex: 0 0 auto;
+            width: 200px;
+            margin: 0 10px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.05) no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #dfdfdf;
+            scroll-snap-align: center;
+            position: relative;
+        }
+
+        .item div {
+            width: 100%;
+            top: 10%;
+            position: absolute;
+            text-align: center;
+            font-size: 9em;
+            color: white;
+        }
+
+        .item h1 {
+            top: 50%;
+            position: absolute;
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-size: 4em;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel-control.prev {
+            left: 10px;
+        }
+
+        .carousel-control.next {
+            right: 10px;
+        }
+
+        #cont-id {
+            font-size: larger;
+            padding-left: 20px;
+        }
+
+        #heading-card-carousel {
+            height: 10%;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                width: 150px;
+                height: 150px;
+            }
+
+            #cont-id {
+                font-size: medium;
+                padding-left: 10px;
+            }
+
+            #heading-card-carousel h1 {
+                font-size: 1.5em;
+            }
+        }
+
+       
+        /* Additional CSS for hover effects */
+        .carousel .item {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .carousel .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel .item div {
+            transition: color 0.3s;
+        }
+
+        .carousel .item:hover div {
+            color: #ff6f61;
+        }
+
+        .carousel-control {
+            outline: none;
+            border: none;
+            background: none;
+            color: #333;
+            font-size: 2em;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .carousel-control:hover {
+            color: #ff6f61;
+        }
+
+        .carousel-control:focus {
+            outline: none;
+        }
+
+        /* Disable scroll for carousel */
+        .carousel {
+            overflow: hidden;
+        }
+   
